@@ -77,3 +77,32 @@ data/raw/chirps_volta.nc # CHIRPS precipitation, clipped to Volta Basin
 data/raw/era5_volta.nc # ERA5 variables, clipped to Volta Basin, daily aggregates
 data/raw/g_run_ensemble.nc # G‑RUN ENSEMBLE monthly runoff
 
+
+
+text
+
+## Notes
+
+- The Volta Basin clipping can be done using the basin shapefile (if provided) or the bounding box: 5.45°N to 11.15°N, 3.25°W to 1.20°E.
+- ERA5 variables can be aggregated from hourly to daily means. The notebook expects a single NetCDF with all required variables; you may adapt the loading code if you have separate files.
+
+## Alternative: pre‑processed input files
+
+If you prefer not to download the raw data, the authors have made available a pre‑processed version (NetCDF files already clipped and resampled) on Zenodo: [DOI pending]. Place those files directly into `data/raw/`.
+4. .gitignore – Exclude large files and temporary outputs
+Create a file named `.gitignore (note the leading dot) in the root folder.
+
+gitignore
+# Data files (too large)
+data/raw/
+# Outputs that can be regenerated
+results/
+figures/
+# Python cache
+__pycache__/
+*.pyc
+# Jupyter checkpoint
+.ipynb_checkpoints/
+# Environment
+venv/
+env/
