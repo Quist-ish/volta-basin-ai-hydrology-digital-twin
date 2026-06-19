@@ -106,3 +106,5 @@ __pycache__/
 # Environment
 venv/
 env/
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20547379.svg)](https://doi.org/10.5281/zenodo.20547379)
