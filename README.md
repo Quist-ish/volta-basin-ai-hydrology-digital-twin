@@ -3,6 +3,7 @@ Hybrid hydrological modelling workflow, scripts, metadata, and results for the s
 # Two‑stage residual correction (WRF‑Hydro + LSTM + XGBoost) for flood simulation in the Volta River Basin
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20547379.svg)](https://doi.org/10.5281/zenodo.20547379)
+https://doi.org/10.5281/zenodo.20547379
 
 This repository contains the code and configuration files for the paper:
 
